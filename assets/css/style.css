@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav , .subnav {
+    list-style-type: none;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav li a {   
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    font-size: 15px;
+    display: block;
+}
+
+.subnav li:hover a,
+.nav > li:hover > a {
+    background-color: #ccc;
+    color: black;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    top: 100%;
+    left: 0%;
+}
+
+.subnav li a {
+    color: black;
+    padding: 0 16px;
+    line-height: 38.5px;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .more-down-icon {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 24px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.search-btn .search-button {
+    color: white;
+    line-height: 46.5px;
+    font-size: 14px;    
+    font-weight: bolder;
+}
+
+#slider {
+    margin-top: 46.5px;
+}
+
+.image-slider img {
+    width: 100%;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
