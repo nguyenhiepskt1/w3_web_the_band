@@ -8,6 +8,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -20,6 +24,7 @@ html {
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 1;
 }
 
 .nav {
@@ -103,12 +108,81 @@ html {
     margin-top: 46.5px;
 }
 
-.image-slider img {
+#slider .slider-content {
+    position: relative;
+}
+
+.slider-content img {
     width: 100%;
+}
+
+.slider-content .text-slider {
+    position: absolute;
+    bottom: 48px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.text-slider .heading-slider {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-slider .sub-heading-slider {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 #content {
 
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.content-section .content-heading {
+    margin-top: 84px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.content-section .sub-content-heading {
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.content-section .content-desc {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content-section .member-list {
+    margin-top: 64px;
+    margin-bottom: 112px;
+}
+
+.member-list .member-item {
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+}
+
+.member-item .image-member {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
 }
 
 #footer {
